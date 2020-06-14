@@ -1,0 +1,33 @@
+.page-loader {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: #d1d1d7;
+    height: 4px;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    -webkit-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    transform: translateY(-4px);
+    z-index: 1000;
+    -webkit-transition-duration: .15s;
+    transition-duration: .15s;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform,-webkit-transform;
+}
+
+.page-loader.opened {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.page-loader-bar {
+    background-color: #007feb;
+    height: 100%;
+    width: 0;
+}
